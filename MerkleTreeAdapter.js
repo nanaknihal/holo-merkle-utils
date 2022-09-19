@@ -1,5 +1,6 @@
 const { IncrementalMerkleTree } = require("@zk-kit/incremental-merkle-tree");
 const { poseidon } = require("circomlibjs-old"); //The new version gives wrong outputs of Poseidon hash that disagree with ZoKrates and are too big for the max scalar in the field
+const { ethers } = require('ethers');
 
 /* This adapter allows a IncrementalMerkleTree proof to be converted to a proof format that's 
  * easier to write an efficient circuit for IMO. The new format has the full Merkle path of all 5 fields per level
