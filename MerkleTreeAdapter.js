@@ -50,6 +50,17 @@ class MerkleTreeAdapter extends IncrementalMerkleTree {
         return proof.flat(2).join(" ");
     }
 
+    /* Exports self as a JSON object */
+     toJSON() {
+        return {
+            root : this._root,
+            depth : this._depth,
+            arity : this._arity,
+            zeroes : this._zeroes,
+            nodes : this._nodes,
+        }
+    }
+
 }
 
 module.exports.Tree = (depth, leaves) => {
