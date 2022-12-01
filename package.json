@@ -1,6 +1,6 @@
 {
   "name": "holo-merkle-utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "helper functions for Holonym Merkle tree needs",
   "main": "MerkleTreeAdapter.js",
   "scripts": {
